@@ -1,0 +1,1 @@
+﻿write-host "Welcome $args !!!  Congratulations! You have run your first script!!!"
