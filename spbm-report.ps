@@ -1,19 +1,18 @@
-Main script
+# Powershell collector script for vSAN storage policy compliance
+# v 1.0 vMan.ch, 28.08.2017 - Initial Version
+# v 1.5 fr0gger03, 01.12.2021 - updated for capacities
+#
+#   Run the command below to store user and pass in secure credential XML for each environment
+#
+#   $cred = Get-Credential
+#   $cred | Export-Clixml -Path "HOME-VC.xml"
 
-#Powershell collector script for vSAN storage policy compliance
-#v1.0 vMan.ch, 28.08.2017 - Initial Version
-<#
-    Run the command below to store user and pass in secure credential XML for each environment
-
-        $cred = Get-Credential
-        $cred | Export-Clixml -Path "HOME-VC.xml"
-#>
 
 param
 (
     [String]$VC,
     [String]$creds,
-    [String]$FileName
+    [String]$policyreport
 )
 
 #Logging Function
@@ -30,6 +29,7 @@ $RunDateTime = (Get-date)
 $RunDateTime = $RunDateTime.tostring("yyyyMMddHHmmss")
 $RunDateTime = $RunDateTime + '_'  + $random
 $LogFileLoc = $ScriptPath + '\Log\Logfile.log'
+$ReportFileLoc = $ScriptPath + '\reports'
 
 if($creds -gt ""){
 
@@ -75,6 +75,8 @@ foreach ($vm in $vms){
             Policy = $VMH.StoragePolicy
             Status = $VMH.ComplianceStatus
             DateTime = $VMH.TimeOfCheck
+            ProvisionedGB = $vm.ProvisionedSpaceGB
+            UsedGB = $vm.UsedSpaceGB
 
             }
                 Remove-Variable VMH -Force -ErrorAction SilentlyContinue
@@ -99,15 +101,11 @@ foreach ($vm in $vms){
             }
                 Remove-Variable disk -Force -ErrorAction SilentlyContinue
         }
-
+    Log -Message "Generating report $policyreport" -LogType "JOB-$RunDateTime" -LogFile $LogFileLoc
+    $DiskPolicyReport | select VM,Cluster,Datastore,Entity,Policy,Status,DateTime,ProvisionedGB,UsedGB | export-csv $ReportFileLoc\$policyreport -NoTypeInformation
 
 
 }
-
-
-Log -Message "Generating report $FileName" -LogType "JOB-$RunDateTime" -LogFile $LogFileLoc
-
-$DiskPolicyReport | select VM,Cluster,Datastore,Entity,Policy,Status,DateTime | export-csv $FileName -NoTypeInformation
 
 Log -Message "Disconnecting from $VC" -LogType "JOB-$RunDateTime" -LogFile $LogFileLoc
 
