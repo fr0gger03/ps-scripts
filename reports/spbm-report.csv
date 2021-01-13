@@ -1,0 +1,72 @@
+"VM","Cluster","Datastore","Entity","Policy","Status","DateTime","ProvisionedGB","UsedGB"
+"synology-storage-console","","local-1tb-vmfs-01","VMHome",,"none",,"18.084270072169601917266845704","6.5100507894530892372131347656"
+"synology-storage-console","","local-1tb-vmfs-01","Hard disk 1",,"none",,,
+"vCenter_Event_Broker_Appliance_v0.4.1","","local-1tb-vmfs-03","VMHome",,"none",,"20.590400321409106254577636719","12.000273789279162883758544922"
+"vCenter_Event_Broker_Appliance_v0.4.1","","local-1tb-vmfs-03","Hard disk 1",,"none",,,
+"vCLS (10)","vsan-cluster","nfs","VMHome",,"none",,"2.0001129079610109329223632812","0.2157424855977296829223632812"
+"vCLS (10)","vsan-cluster","nfs","Hard disk 1",,"none",,,
+"vCLS (9)","vsan-cluster","nfs","VMHome",,"none",,"2.0001130457967519760131835938","0.2179322596639394760131835938"
+"vCLS (9)","vsan-cluster","nfs","Hard disk 1",,"none",,,
+"vCLS (8)","vsan-cluster","nfs","VMHome",,"none",,"2.0001131333410739898681640625","0.2215486802160739898681640625"
+"vCLS (8)","vsan-cluster","nfs","Hard disk 1",,"none",,,
+"nesxi-02","","System.Object[]","VMHome",,"none",,"188.08147972542792558670043945","91.61663445364683866500854492"
+"nesxi-02","","nested-local-500-vsan-cache","Hard disk 2",,"none",,,
+"nesxi-02","","nested-local-1tb-vsan-capacity","Hard disk 3",,"none",,,
+"nesxi-02","","nested-local-250-esxi-boot","Hard disk 1",,"none",,,
+"nesxi-03","","System.Object[]","VMHome",,"none",,"188.08161122817546129226684570","88.02399251889437437057495117"
+"nesxi-03","","nested-local-500-vsan-cache","Hard disk 2",,"none",,,
+"nesxi-03","","nested-local-250-esxi-boot","Hard disk 1",,"none",,,
+"nesxi-03","","nested-local-1tb-vsan-capacity","Hard disk 3",,"none",,,
+"nesxi-01","","System.Object[]","VMHome",,"none",,"188.08141842391341924667358398","71.307979402132332324981689453"
+"nesxi-01","","nested-local-250-esxi-boot","Hard disk 1",,"none",,,
+"nesxi-01","","nested-local-1tb-vsan-capacity","Hard disk 3",,"none",,,
+"nesxi-01","","nested-local-500-vsan-cache","Hard disk 2",,"none",,,
+"nesxi-04","","System.Object[]","VMHome",,"none",,"188.08141921833157539367675781","50.689816134050488471984863281"
+"nesxi-04","","nested-local-250-esxi-boot","Hard disk 1",,"none",,,
+"nesxi-04","","nested-local-1tb-vsan-capacity","Hard disk 3",,"none",,,
+"nesxi-04","","nested-local-500-vsan-cache","Hard disk 2",,"none",,,
+"Horizon-8-Connection-Server","","local-1tb-vmfs-03","VMHome",,"none",,"102.26079847570508718490600586","90.01004647184163331985473633"
+"Horizon-8-Connection-Server","","local-1tb-vmfs-03","Hard disk 1",,"none",,,
+"vcsa","","local-1tb-vmfs-01","VMHome",,"none",,"449.26978488918393850326538086","114.92602583579719066619873047"
+"vcsa","","local-1tb-vmfs-01","Hard disk 15",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 6",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 1",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 11",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 8",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 9",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 2",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 10",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 7",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 5",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 4",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 3",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 14",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 13",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 12",,"none",,,
+"vcsa","","local-1tb-vmfs-01","Hard disk 16",,"none",,,
+"loginsight.vsphere.local","","local-1tb-vmfs-02","VMHome",,"none",,"534.08220536448061466217041016","524.95525117870420217514038086"
+"loginsight.vsphere.local","","local-1tb-vmfs-02","Hard disk 1",,"none",,,
+"loginsight.vsphere.local","","local-1tb-vmfs-02","Hard disk 2",,"none",,,
+"Win10-Jump-box","","local-1tb-vmfs-01","VMHome",,"none",,"64.116310934536159038543701172","64.116310377605259418487548828"
+"Win10-Jump-box","","local-1tb-vmfs-01","Hard disk 1",,"none",,,
+"ubuntu-svr","vsan-cluster","nested-vsanDatastore","VMHome","vSAN Default Storage Policy",,,"36.98046875","20.30078125"
+"ubuntu-svr","vsan-cluster","nested-vsanDatastore","Hard disk 1","vSAN Default Storage Policy",,,,
+"windows-svr-hammerdb","","local-1tb-vmfs-02","VMHome",,"none",,"114.25623287912458181381225586","16.177332902327179908752441406"
+"windows-svr-hammerdb","","local-1tb-vmfs-02","Hard disk 1",,"none",,,
+"windows-mssql-4x4","","System.Object[]","VMHome",,"none",,"204.25134402886033058166503907","60.934184188023209571838378906"
+"windows-mssql-4x4","","local-1tb-vmfs-02","Hard disk 2",,"none",,,
+"windows-mssql-4x4","","local-1tb-vmfs-02","Hard disk 3",,"none",,,
+"windows-mssql-4x4","","local-1tb-vmfs-02","Hard disk 1",,"none",,,
+"windows-mssql-4x4","","local-1tb-vmfs-02","Hard disk 4",,"none",,,
+"windows-mssql-4x1","","System.Object[]","VMHome",,"none",,"204.25222970265895128250122070","136.87256964761763811111450195"
+"windows-mssql-4x1","","local-1tb-vmfs-02","Hard disk 1",,"none",,,
+"windows-mssql-4x1","","local-1tb-vmfs-02","Hard disk 3",,"none",,,
+"windows-mssql-4x1","","local-1tb-vmfs-02","Hard disk 4",,"none",,,
+"windows-mssql-4x1","","local-1tb-vmfs-02","Hard disk 2",,"none",,,
+"windows-mssql-1x1","","local-1tb-vmfs-02","VMHome",,"none",,"212.25223518349230289459228516","16.344256602227687835693359375"
+"windows-mssql-1x1","","local-1tb-vmfs-02","Hard disk 1",,"none",,,
+"vmware-ioinsight-1.1.1","","local-1tb-vmfs-01","VMHome",,"none",,"35.229704761877655982971191407","1.3649042081087827682495117188"
+"vmware-ioinsight-1.1.1","","local-1tb-vmfs-01","Hard disk 1",,"none",,,
+"vmware-ioinsight-1.1.1","","local-1tb-vmfs-01","Hard disk 2",,"none",,,
+"vSAN-Performance-Monitor-v1.3","","local-1tb-vmfs-01","VMHome",,"none",,"18.221211664378643035888671876","2.3469168506562709808349609375"
+"vSAN-Performance-Monitor-v1.3","","local-1tb-vmfs-01","Hard disk 1",,"none",,,
